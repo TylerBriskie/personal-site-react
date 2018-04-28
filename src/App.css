@@ -1,0 +1,16 @@
+/*
+Fonts:
+font-family: 'Gugi', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+.site-header {
+  color: white;
+  background-color: #222;
+  font-family: 'Oswald', sans-serif;
+  margin-top: -100px;
+}
+
+.site-header h5{
+  font-size: 50px;
+}

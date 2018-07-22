@@ -3,10 +3,11 @@ Fonts:
 font-family: 'Gugi', cursive;
 font-family: 'Oswald', sans-serif;
 */
-
+body {
+  background-color: #000;
+}
 .site-header {
   color: white;
-  background-color: #222;
   font-family: 'Oswald', sans-serif;
   margin-top: -100px;
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import headerLogo from '../../images/header-logo-no-bg.png';
+import './header.css';
 
 class Header extends Component {
     render() {
         return (
             <header className="site-header">
-                <h5>Tyler B.</h5>
+                <img src={headerLogo} />
             </header>
         );
     }

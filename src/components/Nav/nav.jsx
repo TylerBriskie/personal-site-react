@@ -1,22 +1,26 @@
 import React from 'react';
-import Button from '../Button/button';
+import FontAwesome from 'react-fontawesome';
+import './nav.css';
 
-
-const Nav = (props) => {
-    console.log(props);
-    var pages = [];
-    for (var i=0; i < props.destinations.length; i++){
-        pages.push(
-            <li>
-            <Button key={i} class="nav" title = {props.destinations[i]} />
-            </li>
-        );
-    }
-
+const Nav = () => {
     return (
         <div>
             <ul>
-                {pages}
+                <li>
+                    <a href='#'><FontAwesome className='nav-icon' size='3x' name='github ' /></a>
+                </li>
+                <li>
+                    <a href="#"><FontAwesome className='nav-icon' size='3x' name='soundcloud ' /></a>
+                </li>
+                <li>
+                    <a href="#"><FontAwesome className='nav-icon' size='3x' name='code ' /></a>
+                </li>
+                <li>
+                    <a href="#"><FontAwesome className='nav-icon' size='3x' name='gamepad ' /></a>
+                </li>
+                <li>
+                    <a href="#"><FontAwesome className='nav-icon' size='3x' name='envelope ' /></a>
+                </li>
             </ul>
         </div>
     )

@@ -7,6 +7,7 @@ class Header extends Component {
         return (
             <header className="site-header">
                 <img src={headerLogo} />
+                <div className="divider" />
             </header>
         );
     }

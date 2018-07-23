@@ -3,17 +3,13 @@ Fonts:
 font-family: 'Gugi', cursive;
 font-family: 'Oswald', sans-serif;
 */
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
 body {
   background-color: #000;
-}
-.site-header {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  margin-top: -100px;
-}
-
-.site-header h5{
-  font-size: 50px;
 }
 
 body {

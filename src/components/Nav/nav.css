@@ -1,79 +1,60 @@
 ul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 ul li {
-    margin: 0 5%;
-    list-style-type: none;
-}
+  margin: 0 5%;
+  list-style-type: none; }
 
-@media only screen and (min-width: 767px){
-    ul {
-        flex-wrap: nowrap;
-        width: 90%;
-        top: 30%;
-    }
-    ul li {
-        margin: 2% 5%;
-    }
-}
+@media only screen and (min-width: 767px) {
+  ul {
+    flex-wrap: nowrap;
+    width: 90%;
+    top: 30%; }
+  ul li {
+    margin: 2% 5%; } }
 
-@media only screen and (min-width: 1370px){
-    ul {
-        position: fixed;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 25%;
-        right: 3%;
-        top: 0;
-    }
-    ul li {
-        margin: 2% 5%;
-    }
-}
+@media only screen and (min-width: 1370px) {
+  ul {
+    position: fixed;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 25%;
+    right: 3%;
+    top: 0; }
+  ul li {
+    margin: 2% 5%; } }
 
+@media only screen and (min-width: 1640px) {
+  ul {
+    flex-wrap: nowrap;
+    width: 25%;
+    right: 10%;
+    top: 12%; }
+  ul li {
+    margin: -15% 10%; } }
 
-@media only screen and (min-width: 1640px){
-    ul {
-        flex-wrap: nowrap;
-        width: 25%;
-        right: 10%;
-        top: 12%;
-
-    }
-    ul li {
-        margin: -15% 10%;
-    }
-}
-
-@media only screen and (min-width: 1921px){
-    ul {
-        flex-wrap: nowrap;
-        top: 5%;
-    }
-    ul li {
-        margin: 0 15%;
-    }
-}
-
+@media only screen and (min-width: 1921px) {
+  ul {
+    flex-wrap: nowrap;
+    top: 5%; }
+  ul li {
+    margin: 0 15%; } }
 
 ul li a {
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 125px;
-    background: #333;
-    border-radius: 50%;
-    color: #666;
-    transition: .5s;
-}
-
-ul li a:before {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 125px;
+  background: #333;
+  border-radius: 50%;
+  color: #666;
+  transition: .5s; }
+  ul li a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -81,58 +62,54 @@ ul li a:before {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #00fff9;
     transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-}
+    transform: scale(0.9);
+    z-index: -1; }
 
-ul li a:hover:before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00fff9;
-}
+.yellow a:before {
+  background: #ffee09; }
 
-ul li a:hover {
-    color: #00fff9;
-    box-shadow: 0 0 5px #00fff9;
-    text-shadow: 0 0 5px #00fff9;
-}
+.yellow a:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee09; }
 
-.yellow:before {
-    background: #ffee09;
-}
-.yellow:hover {
-    color: #ffee09;
-    box-shadow: 0 0 15px #ffee09;
-    text-shadow: 0 0 5px #ffee09;
-}
+.yellow a:hover {
+  color: #ffee09;
+  box-shadow: 0 0 5px #ffee09;
+  text-shadow: 0 0 5px #ffee09; }
 
-.yellow:hover:before {
-    box-shadow: 0 0 15px #ffee09;
-}
+.pink a:before {
+  background: #FF00e9; }
 
-.pink:before {
-    background: #FF00e9;
-}
-.pink:hover {
-    color: #FF00e9;
-    box-shadow: 0 0 15px #FF00e9;
-    text-shadow: 0 0 5px #FF00e9;
-}
+.pink a:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FF00e9; }
 
-.pink:hover:before {
-    box-shadow: 0 0 15px #FF00e9;
-}
+.pink a:hover {
+  color: #FF00e9;
+  box-shadow: 0 0 5px #FF00e9;
+  text-shadow: 0 0 5px #FF00e9; }
 
-.purple:before {
-    background: #7933F0;
-}
-.purple:hover {
-    color: #7933F0;
-    box-shadow: 0 0 15px #7933F0;
-    text-shadow: 0 0 5px #7933F0;
-}
+.blue a:before {
+  background: #30C8FF; }
 
-.purple:hover:before {
-    box-shadow: 0 0 15px #7933F0;
-}
+.blue a:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #30C8FF; }
+
+.blue a:hover {
+  color: #30C8FF;
+  box-shadow: 0 0 5px #30C8FF;
+  text-shadow: 0 0 5px #30C8FF; }
+
+.red a:before {
+  background: #BF0900; }
+
+.red a:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #BF0900; }
+
+.red a:hover {
+  color: #BF0900;
+  box-shadow: 0 0 5px #BF0900;
+  text-shadow: 0 0 5px #BF0900; }

@@ -6,17 +6,31 @@ const Nav = () => {
     return (
         <div>
             <ul>
-                <li>
-                    <a href="#" className="yellow"><FontAwesome className='nav-icon' size='3x' name='code ' /></a>
+                <li className="yellow">
+                    <a href="#">
+                        <FontAwesome className='nav-icon' size='3x' name='code ' />
+                        <p>Software Engineer</p>
+                    </a>
+
                 </li>
-                <li>
-                    <a href="#" className="pink"><FontAwesome className='nav-icon' size='3x' name='soundcloud ' /></a>
+                <li className="pink">
+                    <a href="#">
+                        <FontAwesome className='nav-icon' size='3x' name='soundcloud ' />
+                        <p>Musician</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"><FontAwesome className='nav-icon' size='3x' name='gamepad ' /></a>
+                <li className="blue">
+                    <a href="#">
+                        <FontAwesome className='nav-icon' size='3x' name='gamepad ' />
+                        <p>Game Developer</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#" className="purple"><FontAwesome className='nav-icon' size='3x' name='envelope ' /></a>
+                <li className="red">
+                    <a href="#">
+                        <FontAwesome className='nav-icon' size='3x' name='envelope ' />
+                        <p>Contact</p>
+                    </a>
+
                 </li>
             </ul>
         </div>

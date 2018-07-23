@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import headerLogo from '../../images/header-logo-no-bg.png';
+import headerLogoUltraWide from '../../images/banner-image-ultra-wide.png';
+import Nav from '../Nav/nav';
 import './header.css';
 
 class Header extends Component {
     render() {
         return (
             <header className="site-header">
-                <img src={headerLogo} />
-                <div className="divider" />
+                    <img />
+                <Nav />
             </header>
         );
     }

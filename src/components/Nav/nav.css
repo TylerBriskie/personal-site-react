@@ -1,12 +1,63 @@
 ul {
-    margin-top: 1%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 ul li {
-    list-style: none;
-    margin: 0 115px;
+    margin: 0 5%;
+    list-style-type: none;
 }
+
+@media only screen and (min-width: 767px){
+    ul {
+        flex-wrap: nowrap;
+        width: 90%;
+        top: 30%;
+    }
+    ul li {
+        margin: 2% 5%;
+    }
+}
+
+@media only screen and (min-width: 1370px){
+    ul {
+        position: fixed;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 25%;
+        right: 10%;
+        top: 5%;
+    }
+    ul li {
+        margin: 2% 5%;
+    }
+}
+
+@media only screen and (min-width: 1540px){
+    ul {
+        flex-wrap: nowrap;
+        width: 25%;
+        right: 10%;
+        top: 10%;
+
+    }
+    ul li {
+        margin: -15% 10%;
+    }
+}
+
+@media only screen and (min-width: 1921px){
+    ul {
+        flex-wrap: nowrap;
+    }
+    ul li {
+        margin: 0 15%;
+    }
+}
+
+
 ul li a {
     position: relative;
     display: block;
@@ -43,4 +94,43 @@ ul li a:hover {
     color: #00fff9;
     box-shadow: 0 0 5px #00fff9;
     text-shadow: 0 0 5px #00fff9;
+}
+
+.yellow:before {
+    background: #ffee09;
+}
+.yellow:hover {
+    color: #ffee09;
+    box-shadow: 0 0 15px #ffee09;
+    text-shadow: 0 0 5px #ffee09;
+}
+
+.yellow:hover:before {
+    box-shadow: 0 0 15px #ffee09;
+}
+
+.pink:before {
+    background: #FF00e9;
+}
+.pink:hover {
+    color: #FF00e9;
+    box-shadow: 0 0 15px #FF00e9;
+    text-shadow: 0 0 5px #FF00e9;
+}
+
+.pink:hover:before {
+    box-shadow: 0 0 15px #FF00e9;
+}
+
+.purple:before {
+    background: #7933F0;
+}
+.purple:hover {
+    color: #7933F0;
+    box-shadow: 0 0 15px #7933F0;
+    text-shadow: 0 0 5px #7933F0;
+}
+
+.purple:hover:before {
+    box-shadow: 0 0 15px #7933F0;
 }

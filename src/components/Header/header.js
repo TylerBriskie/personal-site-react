@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <header className="site-header">
-                    <img />
+                <img src={headerLogoUltraWide}/>
                 <Nav />
             </header>
         );

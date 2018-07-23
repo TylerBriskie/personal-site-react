@@ -1,24 +1,7 @@
 img {
-    width: 100%;
+    width: 2560px;
     z-index: -1;
     background-repeat: no-repeat;
     height: 240px;
     background-size: cover;
-    background-image: url('../../images/banner-image-wide.png');
-
-}
-
-@media only screen and (min-width: 1200px){
-    img {
-        height: 240px;
-        background-size: cover;
-        background-image: url('../../images/banner-image-wide.png');
-    }
-}
-
-@media only screen and (min-width: 1921px){
-    img {
-        height: 300px;
-        background-image: url('../../images/banner-image-ultra-wide.png');
-    }
 }

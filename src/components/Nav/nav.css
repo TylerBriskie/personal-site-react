@@ -25,22 +25,23 @@ ul li {
     ul {
         position: fixed;
         justify-content: space-around;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 25%;
-        right: 10%;
-        top: 5%;
+        right: 3%;
+        top: 0;
     }
     ul li {
         margin: 2% 5%;
     }
 }
 
-@media only screen and (min-width: 1540px){
+
+@media only screen and (min-width: 1640px){
     ul {
         flex-wrap: nowrap;
         width: 25%;
         right: 10%;
-        top: 10%;
+        top: 12%;
 
     }
     ul li {
@@ -51,6 +52,7 @@ ul li {
 @media only screen and (min-width: 1921px){
     ul {
         flex-wrap: nowrap;
+        top: 5%;
     }
     ul li {
         margin: 0 15%;
